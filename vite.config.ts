@@ -8,7 +8,8 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			'@': resolve(__dirname, 'src') // 设置'@'指向'src'目录
-		}
+		},
+		extensions: ['.ts', '.tsx', '.js']
 	},
 	base: './', // 设置打包路径
 	server: {
